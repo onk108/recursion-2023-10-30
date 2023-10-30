@@ -51,4 +51,12 @@ public class CalcTest {
 
         assertThat(rs).isEqualTo(0);
     }
+
+    @Test
+    @DisplayName("10 - 5 = 5")
+    void t7() {
+        int rs = Calc.run("10 - 5");
+
+        assertThat(rs).isEqualTo(5);
+    }
 }
